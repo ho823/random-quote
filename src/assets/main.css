@@ -1,0 +1,30 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+  color: white;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(0, 0%, 85%, 0.861);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: #43141a; 
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
