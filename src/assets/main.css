@@ -7,18 +7,21 @@
   color: white;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(0, 0%, 85%, 0.861);
-  transition: 0.4s;
+  color: hsla(0, 0%, 51%, 0.861);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: #43141a; 
+.router-link-active, .router-link-exact-active {
+  display: inline-flex;
+  color: rgb(23, 214, 214);
+
+  &:before {
+    content: '✻';
   }
+
 }
+
 
 @media (min-width: 1024px) {
 
